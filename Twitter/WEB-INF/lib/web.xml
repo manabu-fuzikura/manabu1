@@ -1,10 +1,10 @@
 <servlet>
-	<servlet-name>Twitterbot</servlet-name>
-	<servlet-class>test</servlet-class>
+	<servlet-name>senyaBot</servlet-name>
+	<servlet-class>hoge.fuga.SenyaBot</servlet-class>
 </servlet>
 <servlet-mapping>
-	<servlet-name>Twitterbot</servlet-name>
-	<url-pattern>/src/Twitterbot</url-pattern>
+	<servlet-name>senyaBot</servlet-name>
+	<url-pattern>/cron/senya</url-pattern>
 </servlet-mapping>
 <security-constraint>
 	<web-resource-collection>/cron/*</web-resource-collection>
@@ -12,3 +12,4 @@
 			<role-name>admin</role-name>
 	</auth-constraint>
 </security-constraint>
+
